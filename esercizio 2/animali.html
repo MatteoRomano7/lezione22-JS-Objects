@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pet Form</title>
+        <script src="animali.js" defer></script>
+        <link rel="stylesheet" href="animali.css">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="pets.png" alt="pets">
+            <h2>Aggiungi dettagli di ogni animale:</h2>
+        </header>
+
+
+        <form id="petForm">
+            <label for="petName">Nome Animale:</label>
+            <input type="text" id="petName" required>
+
+            <label for="ownerName">Nome Proprietario:</label>
+            <input type="text" id="ownerName" required>
+
+            <label for="species">Specie:</label>
+            <input type="text" id="species" required>
+
+            <label for="breed">Razza:</label>
+            <input type="text" id="breed" required>
+
+            <button type="button" onclick="addPet()">AGGIUNGI</button>
+        </form>
+
+        <div class="listaCreata">
+            <h2>Lista degli animali aggiunti:</h2>
+            <ul id="petList"></ul>
+        </div>
+    </body>
+
+</html>
